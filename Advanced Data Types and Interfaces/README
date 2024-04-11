@@ -1,0 +1,69 @@
+1. Calorie Object
+Write a function that composes an object by given properties. The input comes as an array of strings. Every even index of the array represents the name of the food. Every odd index is a number that is equal to the calories in 100 grams of the given product. Assign each value to its corresponding property, and finally print the object.
+
+The input comes as an array of string elements.
+
+The output should be printed on the console. 
+
+
+2. Person Info
+Write a function that receives 3 parameters, sets them to an object, and returns that object.
+
+The input comes as 3 separate strings in the following order: firstName, lastName, age. 
+
+
+3. Inventory
+Create a function, which creates a register for heroes, with their names, level, and items (if they have such).
+
+The input comes as an array of strings. Each element holds data for a hero, in the following format:
+
+"{heroName} / {heroLevel} / {item1}, {item2}, {item3}..."
+
+You must store the data about every hero. The name is a string, a level is a number and the items are all strings.
+
+The output is all of the data for all the heroes you’ve stored sorted ascending by level. The data must be in the following format for each hero:
+
+Hero: {heroName}
+
+level => {heroLevel}
+
+Items => {item1}, {item2}, {item3}
+
+4. Towns
+You’re tasked to create and print objects from a text table.
+
+You will receive the input as an array of strings, where each string represents a table row, with values on the row separated by pipes " | " and spaces.
+
+The table will consist of exactly 3 columns "Town", "Latitude" and "Longitude". The latitude and longitude columns will always contain valid numbers. Check the examples to get a better understanding of your task.
+
+The output should be objects. Latitude and longitude must be parsed to numbers and formatted to the second decimal point! 
+
+5. Town Population
+You have been tasked to create a registry for different towns and their population.
+
+Input
+
+The input comes as array of strings. Each element will contain data for a town and its population in the following format: "{townName} <-> {townPopulation}"
+
+If you receive the same town twice, you should add the given population to the current one.
+
+Output
+
+As output, you must print all the towns and their population.
+
+6. Lowest Prices in Cities
+You will be given several towns, with products and their price. You need to find the lowest price for every product and the town it is sold at for that price.
+
+Input
+
+The input comes as an array of strings. Each element will hold data about a town, product, and its price at that town. The town and product will be strings, the price will be a number. The input will come in the following format:
+
+{townName} | {productName} | {productPrice}
+
+Output
+
+As output, you must print each product with its lowest price and the town at which the product is sold at that price. If two towns share the same lowest price, print the one that was entered first. The output, for every product, should be in the following format:
+
+{productName} -> {productLowestPrice} ({townName})
+
+The order of output in - order of entrance. See the examples for more info.
