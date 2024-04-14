@@ -1,0 +1,58 @@
+1. Generic Box of String
+Create a generic class Box that takes one property from the constructor. This property must be initialized with generic type. Create a toString() method that returns a message in the following format: "{data} is of type {type}".
+
+2. Generic Compare Elements
+Create a generic class that has as a property an array of generic type. Create a compare(comparator) method that takes an argument of any type. Iterate through the array and compare each element of the array to the comparator and return how many times the comparator is matched.
+
+3. Car Dealership
+Create two generic interfaces:
+
+· Dealership that takes one generic type parameter: dealershipName and another property - soldCars (number)
+· Actions that takes one generic type parameter and defines a sellCar(dealerID , model) method, where both parameters are of the generic type passed to the interface
+
+Create a class CarDealership that implements both Dealership and Actions and has one property of its own:
+
+· Public property modelsSold which is initially set to empty object
+
+Note: The dealershipName is taken through the constructor and the soldCars is initially set to 0.
+
+Make the following two methods:
+
+· sellCar(dealerID , model) – add the dealerID as a key and the model as value in the modelsSold object and increase the soldCars by 1;
+
+· showDetails() – return a message in the following format:
+
+"{Dealership}:
+
+{dealerID} sold {model}
+
+..."
+
+4. Bank Transactions
+Create an abstract generic class CreateAccount that takes two generic type parameters: bankName and bankID.
+
+Create a class PersonalAccount that extends CreateAccount and has three properties of its own:
+
+· Readonly property ownerName (string)
+· Public property money (number) which is initially set to 0
+· Public property recentTransactions which is initially set to empty object
+
+Only the ownerName is taken through the constructor.
+
+Make the following three methods:
+
+· deposit(amount) – simply add the amount to the money you currently have
+· expense(amount, expenseType) – check if you have enough money (>= 0) to make the expense. If so put the expenseType as key and the amount as a value to the recentTransactions object. Furthermore, if have made the same expense more than once simply add the new amount to the existing
+
+one. However, if you don’t have enough money for the expense throw a new error: “You cant make {expenseType} transaction”
+· showDetails() – Calculate the total amount of money spent on expenses and return a message in the following format:
+
+"Bank name: {bankName}
+
+Bank ID: {bankID}
+
+Owner name: {ownerName}
+
+Money: {money}
+
+Money spent: {totalMoneySpentOnExpenses}" 
