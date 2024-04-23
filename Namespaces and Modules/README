@@ -1,0 +1,41 @@
+1. Greeter
+Create a namespace Greeter, that exports a generic interface Greeting.
+
+The interface must support the following two declarations:
+
+· introduction()
+
+· sayGoodbye(name) – the name is of the generic type
+
+In a new file create class Person which implements the Greeter interface and receives two private properties from the constructor: name (a string) and age (a number) and add the following logic to the methods:
+
+· introduction() – returns a string in the following format: "My name is {name} and I am {age} years old."
+
+· sayGoodbye(name) – returns a string in the following format: "Dear {name}, it was a pleasure meeting you!"
+
+2. Deliveries
+Create a namespace FoodAndBeverages, in one file, that exports an interface Delivery, which supports the following declarations:
+
+· newCustomer(customerName: string, visited: boolean)
+
+· visitCustomer(customerName: string) - this method returns a string
+
+· showCustomers() - this method returns a string
+
+In a new file create a class Courier that implements Delivery and has one property of its own:
+
+· protected property placesToVisit which is set through the constructor and is array of objects.
+
+Make the following three methods:
+
+· newCustomer(customerName: string, visited: boolean) - the visited by default is false. Check if the customerName is already a customer of yours, if so throw a new error: "{customerName} is already a customer of yours!". Otherwise push an object with key customerName and value – visited to the placesToVisit array and return a message: "{customerName} just became your client."
+
+· visitCustomer(customerName: string) – check if the customer is client of yours, if not throw a new error: "{clientName} is not your customer". Otherwise swap the value of visited to true.
+
+· showCustomers() – print all the customers in the following format:
+
+"{customerName} -> visited
+
+{customerName} -> visited
+
+… " 
